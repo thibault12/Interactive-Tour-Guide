@@ -1,7 +1,5 @@
 :- use_module(library(http/http_open)).
 :- use_module(library(http/json)).
-:- use_module(library(http/json_convert)).
-:- dynamic(found/2).
 
 %% Constants
 %% 
@@ -61,7 +59,11 @@ det([a | R], R, 1).
 det([an | R], R, 1).
 det([the | R], R, 1).
 det([two | R], R, 2).
+det([2 | R], R, 2).
 det([three | R], R, 3).
+det([3 | R], R, 3).
+det([4 | R], R, 4).
+det([5 | R], R, 5).
 det([some | R], R, 5).
 
 user_query([what, is | L0], Subject, Object, Limit) :-
