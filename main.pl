@@ -97,10 +97,6 @@ handle_price(Url, Adj, Final) :-
   string_concat(Url, P, Temp),
   string_concat(Temp, Adj, Final).
 
-handle_price(Url, Adj, Url) :-
-  member(Adj, [[]]),
-  write('Adj is empty').
-
 build_url(Adj, Subject, Object, Count, Final) :- 
   base_url(X),
   string_concat(X, Subject, Y),
