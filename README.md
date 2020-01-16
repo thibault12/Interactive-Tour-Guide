@@ -11,4 +11,4 @@ Examples queries:
 
 
 How to run the program?
-- Load main.pl in SWI Prolog and then run the query "run.".
+Load main.pl in SWI Prolog and then run the query "run.".
