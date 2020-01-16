@@ -10,5 +10,5 @@ Examples queries:
 - Give me two museums in Chicago!
 
 
-How to run the program?
+How to run the program?  
 Load main.pl in SWI Prolog and then run the query "run.".
